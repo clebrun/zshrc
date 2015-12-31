@@ -9,7 +9,7 @@ ZSHRC="$ZSHRC_FOLDER/zshrc"
 # $HOME/.zshrc can be for device specific config, $ZSHRC for common config
 
 echo "
-# This was added automatically by $0
+# This was added automatically by $ZSHRC_FOLDER/setup_script
 # If your on OS X, use full paths to symlink to used_modules.
 # e.g. ln -s $ZSHRC_FOLDER/all_modules/* ln -s $ZSHRC_FOLDER/used_modules
 source $ZSHRC" >> $HOME/.zshrc
