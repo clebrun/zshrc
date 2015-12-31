@@ -1,3 +1,4 @@
+#/usr/bin/env zsh
 autoload -Uz colors && colors
 autoload -Uz vcs_info
 HISTFILE=~/.zsh-history
@@ -29,6 +30,6 @@ which tree > /dev/null && alias -g t ='tree'
 #fi
 
 # load config files.
-for file in $HOME/.zsh_used_modules/*; do
+for file in used_modules/*; do
   source $file
 done
