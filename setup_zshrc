@@ -1,0 +1,17 @@
+#!/usr/bin/env zsh
+
+cd "${0%/*}"
+ZSHRC_FOLDER=$(pwd)
+mkdir used_modules
+cd -
+ZSHRC="$ZSHRC_FOLDER/zshrc"
+
+# $HOME/.zshrc can be for device specific config, $ZSHRC for common config
+
+echo "
+# This was added automatically by $0
+# If your on OS X, use full paths to symlink to used_modules.
+# e.g. ln -s $ZSHRC_FOLDER/all_modules/* ln -s $ZSHRC_FOLDER/used_modules
+source $ZSHRC" >> $HOME/.zshrc
+
+echo "Be sure to link the modules you want. Read your $HOME/.zshrc for more info."
