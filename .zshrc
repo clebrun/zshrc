@@ -92,7 +92,7 @@ alias lc='ls --color'
 #alias mergesolv='git status --short | grep "^AA" | cut -d " " -f2 | xargs vim'
 alias ftyps="ls -F **/*.* | cut -d '.' -f 2- | sed 's/.\+\.//' | sed 's/\*$//' | sed 's/.*\/$//' | sed 's/.*:$//' | grep -v '^$'"
 
-alias -g aa='&&'
+alias -g AA='&&'
 
 bindkey '^R' history-incremental-search-backward
 
