@@ -30,6 +30,6 @@ which tree > /dev/null && alias -g t ='tree'
 #fi
 
 # load config files.
-for file in used_modules/*; do
+for file in $ZSH_DIR/used_modules/*; do
   source $file
 done
