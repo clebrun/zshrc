@@ -1,4 +1,5 @@
 if which nvim > /dev/null; then
+  export EDITOR="$(which nvim)"
   alias -g ni='nvim'
   
   # Open these extensions with nvim
