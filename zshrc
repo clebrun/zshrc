@@ -24,6 +24,7 @@ bindkey '^R' history-incremental-search-backward
 
 which tree > /dev/null && alias -g t ='tree'
 
+## WM/DE independant system tray
 #if which trayer > /dev/null; then
 #  # reopen trayer
 #  alias retray='trayer --edge top --align right --SetDockType true --SetPartialStrut true --expand true --width 4 --transparent true --tint 0x191970 --height 13 &'
